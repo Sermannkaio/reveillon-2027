@@ -149,12 +149,18 @@ footer{border-top:1px solid var(--line);padding-top:18px;display:flex;flex-direc
 }
 @media (prefers-reduced-motion:no-preference){ .tabs button{transition:background .15s,color .15s} }
 </style>
+<style>
+.pages{display:flex;gap:6px;flex-wrap:wrap}
+.pages a{border:1.5px solid var(--line);border-radius:999px;padding:5px 12px;text-decoration:none;font-weight:600;font-size:.9rem;color:var(--ink);background:var(--surface)}
+.pages a[aria-current="page"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+</style>
 </head>
 <body>
 
 <div class="wrap">
 
 <header>
+  <nav class="pages" aria-label="Pesquisas"><a href="./" aria-current="page">Até R$ 6 mil</a><a href="15mil/">R$ 6 a 15 mil</a></nav>
   <span class="eyebrow">Pesquisa de hospedagem · Airbnb · preços consultados em 21/10/2026</span>
   <h1>Réveillon no litoral, 2 casais</h1>
   <p class="lede">Casas e apartamentos inteiros no litoral do PR e no norte de SC, perto do mar e em lugar calmo, mas a poucos minutos de uma queima de fogos. Analisei 560 anúncios com 2+ quartos e li em detalhe os 75 melhores.</p>

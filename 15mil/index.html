@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Réveillon Pé na Areia 26/27</title>
+<meta name="description" content="Casas pé na areia no Airbnb para 2 casais no Réveillon 2026/27, de R$ 6 a 15 mil: ranking, preços por data e regiões.">
+<meta property="og:title" content="Réveillon pé na areia 26/27 (R$ 6 a 15 mil)">
+<meta property="og:description" content="As melhores casas de frente para o mar no litoral do PR e norte de SC para 2 casais: ranking, preços por data e onde tem fogos.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<style>
+
+/* Layout: one reading column like a beach-town boletim — tide-strip of nights up top, then picks, dates, comparison, regions, checklist */
+:root{
+  --bg:#F2F6F5; --surface:#FFFFFF; --ink:#0F2328; --muted:#56696E; --line:#D3DEDD;
+  --accent:#0B6E78; --accent-ink:#FFFFFF; --accent-soft:#DDEFEE;
+  --sun:#D98A1F; --sun-soft:#FBEBD2; --warn:#B4472E; --warn-soft:#F8E1DA; --good:#2F7D4F; --good-soft:#DDF0E3;
+  --cell-none:#E6ECEB;
+  --f-display:"Bricolage Grotesque", "Avenir Next", "Segoe UI", system-ui, sans-serif;
+  --f-body:"Source Sans 3", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --f-mono:"IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0C171A; --surface:#132226; --ink:#E4EEED; --muted:#93A6A9; --line:#27393D;
+  --accent:#4CBEC7; --accent-ink:#06191C; --accent-soft:#16363B;
+  --sun:#F0B556; --sun-soft:#3A2D16; --warn:#EE8466; --warn-soft:#3B2019; --good:#6CC892; --good-soft:#173324;
+  --cell-none:#1B2C30; color-scheme:dark;}}
+:root[data-theme="dark"]{
+  --bg:#0C171A; --surface:#132226; --ink:#E4EEED; --muted:#93A6A9; --line:#27393D;
+  --accent:#4CBEC7; --accent-ink:#06191C; --accent-soft:#16363B;
+  --sun:#F0B556; --sun-soft:#3A2D16; --warn:#EE8466; --warn-soft:#3B2019; --good:#6CC892; --good-soft:#173324;
+  --cell-none:#1B2C30; color-scheme:dark;}
+
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:16.5px;line-height:1.55;
+  padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px));padding-block:28px 64px}
+.wrap{max-width:1080px;margin:0 auto;display:flex;flex-direction:column;gap:56px}
+h1,h2,h3{font-family:var(--f-display);text-wrap:balance;margin:0;line-height:1.1}
+h1{font-size:clamp(2.1rem,5.4vw,3.5rem);font-weight:800;letter-spacing:-.02em}
+h2{font-size:clamp(1.45rem,3vw,1.95rem);font-weight:800;letter-spacing:-.01em}
+h3{font-size:1.15rem;font-weight:600}
+p{margin:0;max-width:68ch}
+a{color:var(--accent);text-underline-offset:3px}
+a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:6px}
+.eyebrow{font-family:var(--f-mono);font-size:.74rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.num{font-family:var(--f-mono);font-variant-numeric:tabular-nums}
+section{display:flex;flex-direction:column;gap:18px}
+.lede{font-size:1.1rem;color:var(--muted)}
+
+/* header */
+header{display:flex;flex-direction:column;gap:16px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:4px 12px;font-size:.9rem}
+.chip b{font-weight:700}
+
+/* tide strip of nights */
+.strip{display:grid;grid-template-columns:repeat(10,minmax(0,1fr));gap:4px;margin-top:6px}
+.night{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:8px 4px 6px;text-align:center;display:flex;flex-direction:column;gap:2px;min-width:0}
+.night .d{font-family:var(--f-mono);font-weight:600;font-size:.95rem}
+.night .w{font-size:.7rem;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+.night.core{background:var(--accent-soft);border-color:transparent}
+.night.ny{background:var(--sun-soft);border-color:var(--sun)}
+.night.ny .d{color:var(--sun)}
+.strip-legend{display:flex;flex-wrap:wrap;gap:14px;font-size:.84rem;color:var(--muted)}
+.sw{display:inline-block;width:12px;height:12px;border-radius:3px;vertical-align:-1px;margin-right:6px}
+
+/* picks */
+.picks{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px}
+.pick{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px;display:flex;flex-direction:column;gap:10px;min-width:0}
+.pick.main{border:2px solid var(--accent)}
+.pick .why{font-size:.95rem;color:var(--muted)}
+.pick .price{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.pick .price .big{font-family:var(--f-mono);font-size:1.6rem;font-weight:600}
+.pick .price .pp{font-size:.9rem;color:var(--muted)}
+.tag{display:inline-flex;align-items:center;gap:6px;font-size:.76rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;padding:3px 9px;border-radius:999px;background:var(--accent-soft);color:var(--accent);width:max-content}
+.tag.sun{background:var(--sun-soft);color:var(--sun)}
+.tag.warn{background:var(--warn-soft);color:var(--warn)}
+.tag.good{background:var(--good-soft);color:var(--good)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;background:var(--accent);color:var(--accent-ink);text-decoration:none;font-weight:700;border-radius:10px;padding:9px 14px;font-size:.95rem;width:max-content}
+.btn.ghost{background:transparent;color:var(--accent);border:1.5px solid var(--accent)}
+
+/* distance ruler */
+.ruler{display:flex;flex-direction:column;gap:3px;min-width:150px}
+.ruler .bar{position:relative;height:8px;border-radius:99px;background:var(--cell-none);overflow:hidden}
+.ruler .fill{position:absolute;inset:0 auto 0 0;background:linear-gradient(90deg,var(--accent),var(--accent));border-radius:99px}
+.ruler .ticks{position:absolute;inset:0;background:repeating-linear-gradient(90deg,transparent 0 calc(25% - 1px),var(--surface) calc(25% - 1px) 25%)}
+.ruler .lbl{font-size:.82rem;color:var(--muted)}
+.ruler .lbl b{color:var(--ink);font-weight:600}
+
+/* tables */
+.tbl-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:14px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-size:.93rem}
+th,td{padding:10px 12px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
+tr:last-child td{border-bottom:none}
+th{font-family:var(--f-mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);font-weight:600;white-space:nowrap;background:var(--surface);position:sticky;top:0}
+td.r,th.r{text-align:right}
+td .sub{display:block;font-size:.82rem;color:var(--muted)}
+.cmp td:first-child{min-width:210px}
+.dates td,.dates th{text-align:center;white-space:nowrap}
+.dates td:first-child,.dates th:first-child{text-align:left;white-space:normal;min-width:170px}
+.cell{display:inline-block;min-width:66px;padding:4px 6px;border-radius:7px;font-family:var(--f-mono);font-size:.86rem;font-variant-numeric:tabular-nums}
+.cell.ok{background:var(--good-soft);color:var(--good);font-weight:600}
+.cell.mid{background:transparent}
+.cell.over{color:var(--warn)}
+.cell.none{background:var(--cell-none);color:var(--muted)}
+.cell.best{outline:2px solid var(--accent);outline-offset:-2px}
+
+/* tabs */
+.tabs{display:flex;flex-wrap:wrap;gap:6px}
+.tabs button{font:inherit;font-weight:600;font-size:.92rem;border:1.5px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:6px 14px;cursor:pointer}
+.tabs button[aria-selected="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+
+/* detail cards */
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(310px,1fr));gap:14px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px;display:flex;flex-direction:column;gap:12px;min-width:0}
+.card .top{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}
+.rank{font-family:var(--f-display);font-weight:800;font-size:1.9rem;line-height:1;color:var(--accent)}
+.facts{display:grid;grid-template-columns:auto 1fr;gap:4px 12px;font-size:.92rem;margin:0}
+.facts dt{color:var(--muted)}
+.facts dd{margin:0}
+.pc{display:grid;grid-template-columns:1fr 1fr;gap:10px;font-size:.9rem}
+.pc ul{margin:0;padding-left:18px;display:flex;flex-direction:column;gap:3px}
+.pc h4{margin:0 0 4px;font-size:.74rem;font-family:var(--f-mono);text-transform:uppercase;letter-spacing:.07em}
+.pc .pro h4{color:var(--good)} .pc .con h4{color:var(--warn)}
+.card .actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:auto}
+
+/* findings */
+.findings{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+.finding{border-left:3px solid var(--accent);padding:4px 0 4px 14px;display:flex;flex-direction:column;gap:4px}
+.finding b{font-family:var(--f-display);font-size:1.05rem}
+.finding.sun{border-color:var(--sun)}
+.finding.warn{border-color:var(--warn)}
+
+.check{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:10px 22px}
+.check li{display:flex;gap:10px;align-items:flex-start}
+.check li::before{content:"";flex:none;width:16px;height:16px;border:2px solid var(--accent);border-radius:4px;margin-top:4px}
+.note{font-size:.88rem;color:var(--muted);max-width:none}
+footer{border-top:1px solid var(--line);padding-top:18px;display:flex;flex-direction:column;gap:8px}
+
+@media (max-width:640px){
+  body{font-size:16px}
+  .strip{grid-template-columns:repeat(5,minmax(0,1fr))}
+  .pc{grid-template-columns:1fr}
+  .facts{grid-template-columns:1fr}
+  .facts dt{margin-top:6px}
+}
+@media (prefers-reduced-motion:no-preference){ .tabs button{transition:background .15s,color .15s} }
+
+.pages{display:flex;gap:6px;flex-wrap:wrap}
+.pages a{border:1.5px solid var(--line);border-radius:999px;padding:5px 12px;text-decoration:none;font-weight:600;font-size:.9rem;color:var(--ink);background:var(--surface)}
+.pages a[aria-current="page"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <nav class="pages" aria-label="Pesquisas"><a href="../">Até R$ 6 mil</a><a href="./" aria-current="page">R$ 6 a 15 mil</a></nav>
+  <span class="eyebrow">Pesquisa de hospedagem · Airbnb · preços consultados em 21/10/2026</span>
+  <h1>Réveillon pé na areia, 2 casais</h1>
+  <p class="lede">Com R$ 6 a 15 mil, dá para ficar de frente para o mar. Analisei 2.895 anúncios nessa faixa no litoral do PR e no norte de SC, separei os 173 colados no mar com nota 4,85 ou mais, e li um por um para achar os que têm 2 camas de casal e ar-condicionado. Sobraram 46.</p>
+  <div class="chips">
+    <span class="chip"><b>4</b> adultos · 2 quartos de casal</span>
+    <span class="chip">Saindo de <b>Curitiba</b> de carro</span>
+    <span class="chip">Faixa <b class="num">R$ 6.000 a 15.000</b> total</span>
+    <span class="chip"><b>28/12 → 04 ou 05/01</b></span>
+  </div>
+  <div class="strip" aria-label="Noites da viagem">
+    <div class="night"><span class="w">dom</span><span class="d">27</span></div>
+    <div class="night core"><span class="w">seg</span><span class="d">28</span></div>
+    <div class="night core"><span class="w">ter</span><span class="d">29</span></div>
+    <div class="night core"><span class="w">qua</span><span class="d">30</span></div>
+    <div class="night ny"><span class="w">qui</span><span class="d">31</span></div>
+    <div class="night core"><span class="w">sex</span><span class="d">01</span></div>
+    <div class="night core"><span class="w">sáb</span><span class="d">02</span></div>
+    <div class="night core"><span class="w">dom</span><span class="d">03</span></div>
+    <div class="night"><span class="w">seg</span><span class="d">04</span></div>
+    <div class="night"><span class="w">ter</span><span class="d">05</span></div>
+  </div>
+  <div class="strip-legend">
+    <span><i class="sw" style="background:var(--accent-soft)"></i>noites do plano 28→04</span>
+    <span><i class="sw" style="background:var(--sun-soft);outline:1px solid var(--sun)"></i>virada</span>
+  </div>
+</header>
+
+<section aria-labelledby="h-picks">
+  <span class="eyebrow">Se fosse para fechar hoje</span>
+  <h2 id="h-picks">Três escolhas, conforme o que pesa mais</h2>
+  <div class="picks" id="picks"></div>
+</section>
+
+<section aria-labelledby="h-dates">
+  <span class="eyebrow">Variação de datas</span>
+  <h2 id="h-dates">Nessa faixa, mexer nas datas economiza mais</h2>
+  <div class="findings">
+    <div class="finding"><b>Casas de 7 noites: preço igual</b><span>Para quem exige 7 noites, 27→03, 28→04 e 29→05 custam o mesmo, com diferença de até R$ 400.</span></div>
+    <div class="finding sun"><b>29→04 economiza R$ 800 a 1.800</b><span>Nas casas que aceitam 6 noites, entrando na terça. É a melhor troca de dias por dinheiro.</span></div>
+    <div class="finding sun"><b>30→04 economiza R$ 2.000 a 3.600</b><span>Se topar chegar na véspera da véspera. Só as casas com calendário flexível permitem.</span></div>
+    <div class="finding warn"><b>A 8ª noite custa R$ 650 a 1.800</b><span>Para ficar até o dia 05, troque o dia 28 pelo 29 (29→05) e pague 7 noites.</span></div>
+  </div>
+  <div class="tbl-wrap">
+    <table class="dates" id="dates-table">
+      <thead><tr><th>Casa</th><th>27→03<br><span class="sub">7 noites</span></th><th>28→04<br><span class="sub">7 noites</span></th><th>28→05<br><span class="sub">8 noites</span></th><th>29→04<br><span class="sub">6 noites</span></th><th>29→05<br><span class="sub">7 noites</span></th><th>30→04<br><span class="sub">5 noites</span></th><th>30→05<br><span class="sub">6 noites</span></th></tr></thead>
+      <tbody></tbody>
+    </table>
+  </div>
+  <p class="note">Total em reais para 4 adultos, já com as taxas do Airbnb, puxado da tela de reserva de cada anúncio. Verde: mais barato que 28→04. Vermelho: mais caro. Contorno: a janela que eu escolheria. Cinza: indisponível ou abaixo do mínimo de noites.</p>
+</section>
+
+<section aria-labelledby="h-cmp">
+  <span class="eyebrow">Comparativo</span>
+  <h2 id="h-cmp">Todas as finalistas</h2>
+  <div class="tabs" role="tablist" aria-label="Filtrar casas">
+    <button role="tab" id="tab-top" aria-selected="true" data-cat="top">Top 6</button>
+    <button role="tab" id="tab-mais" aria-selected="false" data-cat="mais">Também ótimas</button>
+    <button role="tab" id="tab-all" aria-selected="false" data-cat="all">Todas</button>
+  </div>
+  <div class="tbl-wrap">
+    <table class="cmp" id="cmp-table">
+      <thead><tr><th>Casa</th><th>Distância do mar</th><th>Camas</th><th>Ar</th><th>Nota</th><th>Melhor janela</th><th class="r">Total</th><th class="r">Por pessoa</th><th></th></tr></thead>
+      <tbody></tbody>
+    </table>
+  </div>
+  <p class="note">A distância é a que o anfitrião informa, conferida no mapa (o Airbnb desloca o ponto até ~150 m). Escala da régua: 0 a 400 m, e cada traço equivale a uma quadra.</p>
+</section>
+
+<section aria-labelledby="h-top">
+  <span class="eyebrow">Ranking</span>
+  <h2 id="h-top">As 6 melhores</h2>
+  <p class="note">Critério: perto do mar (40%), conforto para 2 casais e avaliações (30%), preço (20%), calma com fogos por perto (10%). Coloquei uma por região para vocês terem opções diferentes.</p>
+  <div class="cards" id="cards"></div>
+</section>
+
+<section aria-labelledby="h-reg">
+  <span class="eyebrow">Regiões</span>
+  <h2 id="h-reg">Onde ficam, e onde teve fogos na última virada</h2>
+  <div class="tbl-wrap">
+    <table>
+      <thead><tr><th>Região</th><th>De Curitiba</th><th>Fogos em 2025/26</th><th>Mar e clima</th><th>Atenção</th></tr></thead>
+      <tbody>
+        <tr><td><b>Guaratuba</b></td><td class="num">1h20–1h30</td><td>Morro do Cristo (Praia Central) e da ponte</td><td>Coroados é Praia Brava, com ondas.</td><td>A ponte nova foi aberta em mai/2026 e o ferry acabou.</td></tr>
+        <tr><td><b>Itapoá</b></td><td class="num">~1h50</td><td>Ilha de Itapeva, só fogos sem estampido</td><td>Mar calmo, bom para família.</td><td>Acesso único por Garuva.</td></tr>
+        <tr><td><b>Barra Velha</b></td><td class="num">~2h25</td><td>Molhe da Praia Central e Ilha do Grant</td><td>A Central é calma. O Tabuleiro tem ondas.</td><td>Os condomínios do Tabuleiro ficam encostados na BR-101.</td></tr>
+        <tr><td><b>Piçarras</b></td><td class="num">~2h25</td><td>Molhes do Centro e Itacolomi</td><td>Mar calmo, com 100% Bandeira Azul.</td><td>A orla é curta e lota.</td></tr>
+        <tr><td><b>Penha</b></td><td class="num">~2h45</td><td>Sem fogos oficiais. Os mais perto são em Piçarras.</td><td>Armação e Praia Alegre são calmas.</td><td>O Beto Carrero puxa trânsito.</td></tr>
+        <tr><td><b>Navegantes</b></td><td class="num">~2h40</td><td>Molhes do Gravatá e do Pontal</td><td>Mar aberto.</td><td>Meia Praia fica na rota dos aviões.</td></tr>
+        <tr><td><b>Porto Belo (Araçá)</b></td><td class="num">~3h10</td><td>Praia do Baixio, no centro</td><td>Mar de baía, muito calmo. Vila de pescadores.</td><td>A vizinha Itapema tem uma das festas mais cheias de SC.</td></tr>
+        <tr><td><b>Bombinhas</b></td><td class="num">3h15–3h30</td><td>Bombas, Centro e Zimbros (baixo estampido)</td><td>Zimbros é a mais calma. Mariscal tem ondas.</td><td>Taxa ambiental (~R$ 40 por carro) e BR-101 cheia.</td></tr>
+        <tr><td><b>Gov. Celso Ramos</b></td><td class="num">~3h45</td><td>Não encontrei programação oficial.</td><td>Praia das Cordas tem Bandeira Azul e é muito calma.</td><td>A mais longe, passando por Itajaí, Itapema e Tijucas.</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="note">Nenhuma cidade divulgou ainda a programação do Réveillon 2026/27. Os pontos de fogos são os de 2025/26.</p>
+</section>
+
+<section aria-labelledby="h-go">
+  <span class="eyebrow">Antes de reservar</span>
+  <h2 id="h-go">O que perguntar ao anfitrião, e quando sair</h2>
+  <ul class="check">
+    <li><span><b>Camas:</b> peça foto dos 2 quartos. Filtrei pelos que mostram 2 camas de casal, mas vale confirmar.</span></li>
+    <li><span><b>Roupa de cama:</b> alguns anúncios não fornecem lençol e toalha (Itapema do Norte e Mariscal, por exemplo). Pergunte.</span></li>
+    <li><span><b>Condomínio:</b> nos home clubs, pergunte se a piscina e a saída para a praia ficam abertas no Réveillon e se há limite de visitas.</span></li>
+    <li><span><b>Os preços estão subindo:</b> um apartamento em Zimbros passou de R$ 6.800 para R$ 7.160 no mesmo dia. Se gostarem de uma, reservem logo. Quase todas têm cancelamento gratuito por um período.</span></li>
+    <li><span><b>Ida:</b> segunda (28) ou terça (29), cedo. Os picos de 2025/26 foram de 26 a 28/12.</span></li>
+    <li><span><b>Volta:</b> segunda (04) ou terça (05). Evite 02 e 03/01.</span></li>
+  </ul>
+</section>
+
+<footer>
+  <span class="eyebrow">Como foi feita a pesquisa</span>
+  <p class="note">Busca no Airbnb em 21/10/2026 com 4 adultos, lugar inteiro, 2+ quartos e total entre R$ 6.000 e R$ 15.000 para 28/12→04/01. Cobri da Ilha do Mel até Governador Celso Ramos, em 20 recortes do mapa. A distância até o mar foi calculada com a linha de costa do OpenStreetMap. Li descrição, comodidades e camas dos 173 mais próximos do mar com nota 4,85+. Dos 30 finalistas, puxei o calendário (mínimo de noites) e o preço exato de cada janela na tela de reserva. Nada foi reservado e nenhum anfitrião foi contatado.</p>
+</footer>
+</div>
+
+<script>
+const WIN=[["27→03","2026-12-27","2027-01-03"],["28→04","2026-12-28","2027-01-04"],["28→05","2026-12-28","2027-01-05"],["29→04","2026-12-29","2027-01-04"],["29→05","2026-12-29","2027-01-05"],["30→04","2026-12-30","2027-01-04"],["30→05","2026-12-30","2027-01-05"]];
+const H=[
+ {id:"837900310631970475",cat:"top",rank:1,city:"Bombinhas",hood:"Bombas",name:"Apartamento novo no calçadão de Bombas",p:[9455,9455,10739,null,9455,null,null],best:"28→04",rating:"5,0",rev:19,beds:"Queen + casal, ar nos 2 quartos",baths:"1",ac:"Sim, nos 2 quartos",park:"Sim",dist:15,distTxt:"na orla (calçadão)",min:"7",drive:"3h15–3h30",fogos:"Bombas (Rua Tiriba), a pé",pros:["Na orla de Bombas","Nota 5,0 com 19 avaliações","Fogos a pé"],cons:["1 banheiro","Bombas é a praia mais movimentada de Bombinhas","Viagem mais longa, com taxa ambiental"]},
+ {id:"45699686",cat:"top",rank:2,city:"Bombinhas",hood:"Canto Grande",name:"Cobertura com 2 suítes e vista do mar",p:[12724,12724,14475,10973,12724,9222,10973],best:"29→04",rating:"5,0",rev:10,beds:"2 suítes com cama de casal",baths:"2",ac:"Sim, nas 2 suítes",park:"1 vaga (carro pequeno)",dist:20,distTxt:"frente mar (vista lateral)",min:"2",drive:"~3h15",fogos:"Zimbros ou Centro, ~10 min de carro",pros:["Cada casal com sua suíte e seu banheiro","Sacada com churrasqueira","Datas flexíveis: 29→04 por R$ 10.973"],cons:["3º andar, de fundos","Vaga só para carro pequeno","Só 10 avaliações"]},
+ {id:"52970122",cat:"top",rank:3,city:"Porto Belo",hood:"Araçá",name:"Morada do Algarve",p:[10930,10830,12320,null,10730,null,null],best:"29→05",rating:"5,0",rev:45,beds:"Casal + queen",baths:"2",ac:"Sim",park:"3 vagas",dist:75,distTxt:"~75 m, vista do mar",min:"7",drive:"~3h10",fogos:"Praia do Baixio, centro de Porto Belo (~10 min)",pros:["Vila de pescadores calma, mar de baía","Jacuzzi privativa e varanda com vista","45 avaliações, nota 5,0"],cons:["Não é pé na areia","Longe de Curitiba","Precisa de carro para os fogos"]},
+ {id:"791358698671553475",cat:"top",rank:4,city:"Barra Velha",hood:"Tabuleiro (Vila Açoriana)",name:"Resort pé na areia, 4º andar",p:[8654,8654,9862,7796,8654,null,7796],best:"29→04",rating:"5,0",rev:12,beds:"Queen + casal (+ solteiro)",baths:"1",ac:"Sim, nos 2 quartos",park:"Vaga coberta",dist:20,distTxt:"pé na areia (condomínio)",min:"6",drive:"~2h25",fogos:"Molhe da Praia Central e Ilha do Grant (~5–10 min de carro)",pros:["Piscina aquecida e saída direto na praia","Portaria 24h","R$ 7.796 em 29→04"],cons:["Condomínio grande, encostado na BR-101","1 banheiro","Praia com ondas"]},
+ {id:"788436576852414089",cat:"top",rank:5,city:"Guaratuba",hood:"Coroados",name:"Ampla vista do mar, pé na areia",p:[8184,8184,8953,7398,7806,6190,7000],best:"28→04",rating:"5,0",rev:10,beds:"King + casal (+ solteiro)",baths:"1",ac:"Split",park:"Sim",dist:20,distTxt:"pé na areia",min:"5",drive:"~1h30",fogos:"Morro do Cristo (~10–15 min de carro)",pros:["A mais perto de Curitiba","Vista ampla do mar","Entrando dia 30 sai por R$ 6.190"],cons:["1º andar sem elevador","1 banheiro","Praia Brava, com ondas"]},
+ {id:"51943626",cat:"top",rank:6,city:"Itapoá",hood:"Bamerindus",name:"Apto quase pé na areia, 3 quartos",p:[12720,12720,14520,10920,12720,9120,10920],best:"29→04",rating:"5,0",rev:26,beds:"Suíte king com sacada + quarto casal",baths:"2",ac:"Sim, em todos os quartos",park:"Sim",dist:75,distTxt:"~75 m",min:"1",drive:"~1h50",fogos:"Ilha de Itapeva, em frente a Itapema do Norte (~10 min)",pros:["Suíte king com sacada de frente para o mar","Mar calmo","Datas flexíveis: 29→04 por R$ 10.920"],cons:["Grande demais (até 11 pessoas)","3º quarto só com beliches","Precisa de carro para os fogos"]},
+ {id:"1360158113109875515",cat:"mais",city:"Piçarras",hood:"Itacolomi",name:"Home club pé na areia",p:[13430,13610,15280,null,13360,null,null],best:"29→05",rating:"5,0",rev:22,beds:"Queen + casal (+ solteiro)",baths:"2",ac:"Sim",park:"Sim",dist:20,distTxt:"pé na areia",min:"7"},
+ {id:"1546540337540089928",cat:"mais",city:"Piçarras",hood:"Centro",name:"Apto vista mar, 50 m da praia",p:[null,14095,15445,13325,13375,11025,12525],best:"30→04",rating:"5,0",rev:12,beds:"Queen + casal + solteiros",baths:"2",ac:"Split",park:"2 vagas",dist:50,distTxt:"50 m",min:"5"},
+ {id:"30129906",cat:"mais",city:"Gov. Celso Ramos",hood:"Praia das Cordas",name:"Duplex frente ao mar",p:[11750,12150,13950,null,12550,null,null],best:"27→03",rating:"5,0",rev:38,beds:"Suíte king + quarto casal conjugado",baths:"2",ac:"Split",park:"1 vaga",dist:15,distTxt:"pé na areia",min:"7"},
+ {id:"48312051",cat:"mais",city:"Penha",hood:"Centro (Nautilus)",name:"2 quartos vista mar em home club",p:[12326,12326,14002,null,12326,null,null],best:"28→04",rating:"4,93",rev:112,beds:"Suíte queen + quarto casal",baths:"2",ac:"Sim",park:"Privativa",dist:100,distTxt:"~100 m",min:"7"},
+ {id:"50617806",cat:"mais",city:"Barra Velha",hood:"Pedras Brancas",name:"Condomínio pé na areia, piscina aquecida",p:[10193,10193,11617,null,10193,null,null],best:"28→04",rating:"4,89",rev:152,beds:"2 camas queen",baths:"1",ac:"Sim",park:"1 vaga",dist:20,distTxt:"pé na areia",min:"7"},
+ {id:"1094451448660815029",cat:"mais",city:"Barra Velha",hood:"Tabuleiro (Vila Açoriana)",name:"Frente mar, vista dos quartos",p:[11279,11241,12592,9762,11019,null,null],best:"29→04",rating:"5,0",rev:33,beds:"Queen + casal",baths:"1",ac:"Sim",park:"Sim",dist:20,distTxt:"pé na areia",min:"6"},
+ {id:"785652295893223285",cat:"mais",city:"Navegantes",hood:"Meia Praia",name:"Apto frente mar, guarda-vidas em frente",p:[null,9072,10338,null,9072,null,null],best:"28→04",rating:"5,0",rev:25,beds:"Queen + casal (+ beliche)",baths:"2",ac:"Split",park:"Na rua",dist:30,distTxt:"frente mar",min:"7"},
+ {id:"1073179841303859032",cat:"mais",city:"Bombinhas",hood:"Centro",name:"3 quartos de casal com ar, 50 m do mar",p:[10614,10614,12076,12734,10614,10675,12734],best:"28→04",rating:"5,0",rev:6,beds:"3 quartos com casal/queen",baths:"2",ac:"Sim, em todos",park:"Sim",dist:50,distTxt:"50 m",min:"5"},
+ {id:"929931554370478148",cat:"mais",city:"Bombinhas",hood:"Canto Grande",name:"2 suítes com piscina",p:[9870,9870,11230,8510,9870,7150,8510],best:"29→04",rating:"5,0",rev:6,beds:"2 suítes",baths:"2",ac:"Sim",park:"2 vagas",dist:150,distTxt:"150 m",min:"1"},
+ {id:"10170864",cat:"mais",city:"Itapoá",hood:"Bamerindus",name:"Apto novo pé na areia",p:[10943,10943,12142,9744,10943,8545,9744],best:"29→04",rating:"4,92",rev:12,beds:"2 camas de casal (+ beliches)",baths:"2",ac:"Sim",park:"Sim",dist:35,distTxt:"menos de 40 m",min:"1"},
+ {id:"1050996956120620916",cat:"mais",city:"Bombinhas",hood:"Zimbros",name:"2 quartos queen, mar mais calmo",p:[7220,7160,7880,null,6880,null,null],best:"29→05",rating:"5,0",rev:6,beds:"2 quartos com queen (1 suíte)",baths:"2",ac:"Sim",park:"1 vaga",dist:180,distTxt:"180 m",min:"7"},
+ {id:"785699937397982165",cat:"mais",city:"Guaratuba",hood:"Coroados",name:"Térreo com quintal, perto do mar",p:[8463,8463,9080,7650,7893,6400,7050],best:"29→04",rating:"5,0",rev:12,beds:"King + casal (+ beliche)",baths:"1",ac:"Split",park:"Sim",dist:40,distTxt:"poucos passos",min:"5"},
+ {id:"1208223828188026285",cat:"mais",city:"Barra Velha",hood:"Centro",name:"Pé na areia com vista do mar",p:[7712,7892,8972,7752,8072,6752,7952],best:"27→03",rating:"4,98",rev:64,beds:"Casal + queen",baths:"1",ac:"Sim, nos 2 quartos",park:"Grátis, fora",dist:15,distTxt:"pé na areia",min:"5"},
+ {id:"46573157",cat:"mais",city:"Porto Belo",hood:"Araçá",name:"Casa no alto com vista do mar",p:[9030,9030,10320,null,9030,null,null],best:"28→04",rating:"4,92",rev:38,beds:"Casal + queen",baths:"1",ac:"Sim",park:"2 carros",dist:100,distTxt:"vista mar (no alto)",min:"7"}
+];
+const fmt=v=>"R$ "+v.toLocaleString("pt-BR");
+const idx=w=>WIN.findIndex(x=>x[0]===w);
+const link=(h,w)=>{const x=WIN[idx(w||h.best)];return `https://www.airbnb.com.br/rooms/${h.id}?adults=4&check_in=${x[1]}&check_out=${x[2]}`};
+const bestPrice=h=>h.p[idx(h.best)];
+const ruler=h=>{const pct=Math.min(100,Math.max(3,h.dist/400*100));return `<div class="ruler"><div class="bar"><div class="fill" style="width:${pct}%"></div><div class="ticks"></div></div><span class="lbl"><b>${h.distTxt}</b></span></div>`};
+const ratingTxt=h=>`★ ${h.rating} <span class="sub">${h.rev} avaliaç${h.rev===1?"ão":"ões"}</span>`;
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+const picks=[
+ {h:H[0],tag:"Melhor no geral",cls:"",why:"Na orla de Bombas, com nota 5,0 em 19 avaliações, ar nos 2 quartos e os fogos de Bombas a pé. A mais completa abaixo de R$ 10 mil."},
+ {h:H[1],tag:"Mais conforto para 2 casais",cls:"good",why:"Cobertura com 2 suítes, uma para cada casal, frente para o mar em Canto Grande. Aceita 6 noites, e entrando dia 29 cai para menos de R$ 11 mil."},
+ {h:H[4],tag:"Mais perto de Curitiba",cls:"sun",why:"Pé na areia em Coroados, com vista ampla do mar, a 1h30 de casa. Se puderem entrar dia 30, custa R$ 6.190."}
+];
+document.getElementById("picks").innerHTML=picks.map((k,i)=>{const v=bestPrice(k.h);return `<article class="pick${i===0?" main":""}">
+ <span class="tag ${k.cls}">${k.tag}</span>
+ <h3>${esc(k.h.city)} · ${esc(k.h.hood)}</h3>
+ <div class="price"><span class="big">${fmt(v)}</span><span class="pp">${k.h.best.replace("→"," → ")} · ${fmt(Math.round(v/4))} por pessoa</span></div>
+ <p class="why">${k.why}</p>
+ ${ruler(k.h)}
+ <a class="btn" href="${link(k.h)}" target="_blank" rel="noopener">Abrir no Airbnb</a>
+</article>`}).join("");
+
+const dateRows=H.filter(h=>h.cat==="top"||["1546540337540089928","929931554370478148","10170864","1208223828188026285","785699937397982165"].includes(h.id));
+document.querySelector("#dates-table tbody").innerHTML=dateRows.map(h=>{const base=h.p[1];return `<tr><td><b>${esc(h.city)}</b> <span class="sub">${esc(h.hood)} · mín. ${esc(h.min)} noites</span></td>${h.p.map((v,i)=>{const isBest=WIN[i][0]===h.best;if(v==null)return `<td><span class="cell none">—</span></td>`;const c=i===1||base==null?"mid":(v<base?"ok":(v>base?"over":"mid"));return `<td><a href="${link(h,WIN[i][0])}" target="_blank" rel="noopener" style="text-decoration:none"><span class="cell ${c}${isBest?" best":""}">${(v/1000).toFixed(1).replace(".",",")} mil</span></a></td>`}).join("")}</tr>`}).join("");
+
+const tbody=document.querySelector("#cmp-table tbody");
+function renderCmp(cat){
+ const rows=H.filter(h=>cat==="all"||h.cat===cat);
+ tbody.innerHTML=rows.map(h=>{const v=bestPrice(h);return `<tr>
+  <td><b>${esc(h.city)}</b> · ${esc(h.hood)}<span class="sub">${esc(h.name)}</span></td>
+  <td>${ruler(h)}</td>
+  <td>${esc(h.beds)}<span class="sub">${esc(h.baths)} banheiro${h.baths==="1"?"":"s"}</span></td>
+  <td>${esc(h.ac)}</td>
+  <td style="white-space:nowrap">${ratingTxt(h)}</td>
+  <td class="num">${h.best}<span class="sub">mín. ${esc(h.min)}</span></td>
+  <td class="r num" style="font-weight:600">${fmt(v)}</td>
+  <td class="r num">${fmt(Math.round(v/4))}</td>
+  <td><a href="${link(h)}" target="_blank" rel="noopener">Ver</a></td></tr>`}).join("");
+}
+document.querySelectorAll(".tabs button").forEach(b=>b.addEventListener("click",()=>{
+ document.querySelectorAll(".tabs button").forEach(x=>x.setAttribute("aria-selected",x===b?"true":"false"));
+ renderCmp(b.dataset.cat);
+}));
+renderCmp("top");
+
+document.getElementById("cards").innerHTML=H.filter(h=>h.cat==="top").map(h=>{const v=bestPrice(h);const base=h.p[1];return `<article class="card">
+ <div class="top"><div><span class="eyebrow">${esc(h.city)} · ${esc(h.hood)}</span><h3>${esc(h.name)}</h3></div><span class="rank">${h.rank}</span></div>
+ ${ruler(h)}
+ <dl class="facts">
+  <dt>Total</dt><dd class="num"><b>${fmt(v)}</b> em ${h.best}${h.best!=="28→04"&&base?` <span class="sub">28→04: ${fmt(base)}</span>`:""}</dd>
+  <dt>Camas</dt><dd>${esc(h.beds)} · ${esc(h.baths)} banheiro${h.baths==="1"?"":"s"}</dd>
+  <dt>Ar · vaga</dt><dd>${esc(h.ac)} · ${esc(h.park)}</dd>
+  <dt>Avaliação</dt><dd>${ratingTxt(h)}</dd>
+  <dt>Fogos</dt><dd>${esc(h.fogos)}</dd>
+  <dt>De Curitiba</dt><dd>${esc(h.drive)} de carro</dd>
+ </dl>
+ <div class="pc"><div class="pro"><h4>A favor</h4><ul>${h.pros.map(x=>`<li>${esc(x)}</li>`).join("")}</ul></div><div class="con"><h4>Contra</h4><ul>${h.cons.map(x=>`<li>${esc(x)}</li>`).join("")}</ul></div></div>
+ <div class="actions"><a class="btn" href="${link(h)}" target="_blank" rel="noopener">Abrir em ${h.best}</a>${h.best!=="28→04"&&base?`<a class="btn ghost" href="${link(h,"28→04")}" target="_blank" rel="noopener">Ver 28→04</a>`:""}</div>
+</article>`}).join("");
+</script>
+</body>
+</html>
