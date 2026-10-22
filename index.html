@@ -68,7 +68,7 @@ header{display:flex;flex-direction:column;gap:16px}
 .sw{display:inline-block;width:12px;height:12px;border-radius:3px;vertical-align:-1px;margin-right:6px}
 
 /* picks */
-.picks{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px}
+.picks{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(280px,100%),1fr));gap:14px}
 .pick{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px;display:flex;flex-direction:column;gap:10px;min-width:0}
 .pick.main{border:2px solid var(--accent)}
 .pick .why{font-size:.95rem;color:var(--muted)}
@@ -114,7 +114,7 @@ td .sub{display:block;font-size:.82rem;color:var(--muted)}
 .tabs button[aria-selected="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
 
 /* detail cards */
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(310px,1fr));gap:14px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(310px,100%),1fr));gap:14px}
 .card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px;display:flex;flex-direction:column;gap:12px;min-width:0}
 .card .top{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}
 .rank{font-family:var(--f-display);font-weight:800;font-size:1.9rem;line-height:1;color:var(--accent)}
@@ -128,13 +128,13 @@ td .sub{display:block;font-size:.82rem;color:var(--muted)}
 .card .actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:auto}
 
 /* findings */
-.findings{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+.findings{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(240px,100%),1fr));gap:12px}
 .finding{border-left:3px solid var(--accent);padding:4px 0 4px 14px;display:flex;flex-direction:column;gap:4px}
 .finding b{font-family:var(--f-display);font-size:1.05rem}
 .finding.sun{border-color:var(--sun)}
 .finding.warn{border-color:var(--warn)}
 
-.check{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:10px 22px}
+.check{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr));gap:10px 22px}
 .check li{display:flex;gap:10px;align-items:flex-start}
 .check li::before{content:"";flex:none;width:16px;height:16px;border:2px solid var(--accent);border-radius:4px;margin-top:4px}
 .note{font-size:.88rem;color:var(--muted);max-width:none}
